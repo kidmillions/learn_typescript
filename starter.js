@@ -142,4 +142,28 @@ var PlantInfo = (function (_super) {
 var planting = new PlantInfo();
 alert(planting.getName("Apple Tree"));
 alert("The plant id is: " + planting.getName(1234));
+var CPlant = (function () {
+    function CPlant() {
+    }
+    return CPlant;
+})();
+var p;
+p = new CPlant();
+var trees = (function () {
+    function trees() {
+    }
+    return trees;
+})();
+;
+var CGreeter = (function () {
+    function CGreeter(element) {
+        this.element = element;
+    }
+    CGreeter.prototype.greet = function (msg) {
+        this.element.innerHTML = msg.greeting;
+    };
+    return CGreeter;
+})();
+/// <reference path="jquery.d.ts" />
+var div = $('.hi').show(100);
 //# sourceMappingURL=starter.js.map
